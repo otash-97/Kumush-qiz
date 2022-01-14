@@ -13,6 +13,13 @@
   margin-right: 45px;
   margin-left: -1px;
 }
+.yagonam{
+  font-family: 'Pacifico', cursive;
+  font-size: 42px;
+  text-align: end;
+  color: #222;
+  line-height: 63px;
+}
 body{
   display: flex;
   /* align-items: center; */
