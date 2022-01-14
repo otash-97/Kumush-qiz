@@ -20,6 +20,9 @@
   color: #222;
   line-height: 63px;
 }
+.red{
+  color: rgb(189, 67, 23);
+}
 body{
   display: flex;
   flex-wrap: wrap;

@@ -28,40 +28,41 @@
       <source src="mp3/music.mp3" type="audio/mpeg">
       <!-- Your browser does not support the audio element. -->
     </audio>
-    <h2 class="yagonam">Sog'indim<BR>gulim!<br>Seni <br>sevaman<br>Hayotim</h2>
-  </div>
-  <div class="container">
-    <div class="w3-content w3-section" style="max-width:500px">
-      <img class="mySlides" src="img/street.jpg" style="width:100%">
-      <img class="mySlides" src="img/beautiful.jpg" style="width:100%">
-      <img class="mySlides" src="img/ice.jpg" style="width:100%">
-      <img class="mySlides" src="img/party -green-tree-whith-apple.jpg" style="width:100%">
-      <img class="mySlides" src="img/verybeautiful.jpg" style="width:100%">
-      <img class="mySlides" src="img/ice2.jpg" style="width:100%">
-      <img class="mySlides" src="img/pretty.jpg" style="width:100%">
-      <img class="mySlides" src="img/party.jpg" style="width:100%">
-      <img class="mySlides" src="img/beautiful.jpg" style="width:100%">
+    <h2 class="yagonam">Sog'indim<BR>gulim!</h2>
+      <h2 class="yagonam red"> Seni Sevaman<br>Yolg'izim..!</h2>
     </div>
+    <div class="container">
+      <div class="w3-content w3-section" style="max-width:500px">
+        <img class="mySlides" src="img/street.jpg" style="width:100%">
+        <img class="mySlides" src="img/beautiful.jpg" style="width:100%">
+        <img class="mySlides" src="img/ice.jpg" style="width:100%">
+        <img class="mySlides" src="img/party -green-tree-whith-apple.jpg" style="width:100%">
+        <img class="mySlides" src="img/verybeautiful.jpg" style="width:100%">
+        <img class="mySlides" src="img/ice2.jpg" style="width:100%">
+        <img class="mySlides" src="img/pretty.jpg" style="width:100%">
+        <img class="mySlides" src="img/party.jpg" style="width:100%">
+        <img class="mySlides" src="img/beautiful.jpg" style="width:100%">
+      </div>
 
 
-  </div>
-  <!-- https://uzhits.net/mp3/49685-oybek-ahmedov-azizam-cover.html -->
+    </div>
+    <!-- https://uzhits.net/mp3/49685-oybek-ahmedov-azizam-cover.html -->
 
-  <script>
-    var myIndex = 0;
-    carousel();
+    <script>
+      var myIndex = 0;
+      carousel();
 
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 2000);
       }
-      myIndex++;
-      if (myIndex > x.length) {myIndex = 1}
-      x[myIndex-1].style.display = "block";
-      setTimeout(carousel, 2000);
-    }
-  </script>
-</body>
-</html>
+    </script>
+  </body>
+  </html>
