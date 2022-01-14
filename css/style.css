@@ -1,0 +1,28 @@
+.container{
+  width: 600px;
+  margin: 0 auto;
+  /* display: flex;
+  justify-content: space-around;
+  align-items: center; */
+}
+*{
+  box-sizing: border-box;
+}
+.audio{
+  /* display: inline-block; */
+  margin-right: 45px;
+  margin-left: -1px;
+}
+body{
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-around; */
+  background-image: url("/img/mountains-7ddde89.webp");
+  /* object-fit: cover;
+  object-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #cccccc;
+  background-position: center;
+  background-attachment: fixed;
+}
