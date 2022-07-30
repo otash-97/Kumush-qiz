@@ -1,68 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/lib/w3.css">
-  <style>
-    .mySlides {display:none;}
-  </style>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/lib/w3.css">
+    <style>
+        .mySlides {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <div class="audio2">
-    <audio controls autoplay>
+    <div class="audio2">
+        <audio controls autoplay>
       <!-- <source src="mp3/music.ogg" type="audio/ogg"> -->
       <source src="mp3/Botir_Qodirov_Ishq_Ботир_Кодиров_Ишк_Ta_tilMP3_70K.mp3" type="audio/mpeg">
       <!-- Your browser does not support the audio element. -->
     </audio>
-  </div>
-  <div class="audio">
-    <audio controls>
+    </div>
+    <div class="audio">
+        <audio controls>
       <source src="mp3/music.ogg" type="audio/ogg">
       <source src="mp3/music.mp3" type="audio/mpeg">
       <!-- Your browser does not support the audio element. -->
     </audio>
-    <h2 class="yagonam">Sog'indim<BR>gulim!</h2>
-      <h2 class="yagonam red"> Seni Sevaman<br>Yolg'izim..!</h2>
+        <h2 class="yagonam">Sog'indim
+            <BR>gulim!</h2>
+        <h2 class="yagonam red"> Seni Sevaman<br>Yolg'izim..!</h2>
     </div>
     <div class="container">
-      <div class="w3-content w3-section" style="max-width:500px">
-        <img class="mySlides" src="img/street.jpg" style="width:100%">
-        <img class="mySlides" src="img/beautiful.jpg" style="width:100%">
-        <img class="mySlides" src="img/ice.jpg" style="width:100%">
-        <img class="mySlides" src="img/party -green-tree-whith-apple.jpg" style="width:100%">
-        <img class="mySlides" src="img/verybeautiful.jpg" style="width:100%">
-        <img class="mySlides" src="img/ice2.jpg" style="width:100%">
-        <img class="mySlides" src="img/pretty.jpg" style="width:100%">
-        <img class="mySlides" src="img/party.jpg" style="width:100%">
-        <img class="mySlides" src="img/beautiful.jpg" style="width:100%">
-      </div>
+        <div class="w3-content w3-section" style="max-width:500px">
+            <img class="mySlides" src="img/street.jpg" style="width:100%">
+            <img class="mySlides" src="img/beautiful.jpg" style="width:100%">
+            <img class="mySlides" src="img/ice.jpg" style="width:100%">
+            <img class="mySlides" src="img/party -green-tree-whith-apple.jpg" style="width:100%">
+            <img class="mySlides" src="img/verybeautiful.jpg" style="width:100%">
+            <img class="mySlides" src="img/ice2.jpg" style="width:100%">
+            <img class="mySlides" src="img/pretty.jpg" style="width:100%">
+            <img class="mySlides" src="img/party.jpg" style="width:100%">
+            <img class="mySlides" src="img/beautiful.jpg" style="width:100%">
+            <img class="mySlides" src="img/123.jpg" style="width:100%">
+            <img class="mySlides" src="img/124.jpg" style="width:100%">
+        </div>
 
 
     </div>
     <!-- https://uzhits.net/mp3/49685-oybek-ahmedov-azizam-cover.html -->
 
     <script>
-      var myIndex = 0;
-      carousel();
+        var myIndex = 0;
+        carousel();
 
-      function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000);
         }
-        myIndex++;
-        if (myIndex > x.length) {myIndex = 1}
-        x[myIndex-1].style.display = "block";
-        setTimeout(carousel, 2000);
-      }
     </script>
-  </body>
-  </html>
+</body>
+
+</html>
